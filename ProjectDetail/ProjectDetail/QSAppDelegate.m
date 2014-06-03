@@ -9,6 +9,7 @@
 #import "QSAppDelegate.h"
 #import "QSSprintModel.h"
 #import "QSSprintListViewController.h"
+#import "QSLoginViewController.h"
 
 @implementation QSAppDelegate
 
@@ -17,7 +18,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    QSSprintListViewController *viewController = [[QSSprintListViewController alloc] initWithNibName:@"QSSprintListViewController" bundle:nil];
+    QSLoginViewController *viewController = [[QSLoginViewController alloc] initWithNibName:@"QSLoginViewController" bundle:nil];
     [self.window setRootViewController:viewController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -25,3 +26,4 @@
 }
 
 @end
+
